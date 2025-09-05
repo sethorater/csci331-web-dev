@@ -12,7 +12,7 @@ center the body in the browswer window. Put 20 pixels of margin on top.  */
 body {
     background-color: white; 
     border: 10px solid gold;
-    padding: 3 rems;
+    padding: 3rem;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -40,3 +40,8 @@ img {
 /* The "special" class should have a background color of gold.
 Just the paragraph marked "special" should have double the 
 relative font size (ie: 2rem) as well the gold bkgd. */
+
+.special {
+    background-color: gold;
+    font-size: 2rem;
+}
