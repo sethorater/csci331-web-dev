@@ -1,6 +1,10 @@
 /* style the root of the document (html) to have a background color 
 based on a color from the image (try the color picker in the form). */
 
+body {
+    background-color: #C2BDBA;
+}
+
 /* Give the body a white background, a 10 pixel solid gold border,
 and 3 rems (relative ems) of padding. Set the margin to auto to
 center the body in the browswer window. Put 20 pixels of margin on top.  */
