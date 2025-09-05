@@ -13,7 +13,7 @@ body {
     background-color: white; 
     border: 10px solid gold;
     padding: 3 rems;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 20px;
 }
 
@@ -28,6 +28,14 @@ h1 {
 Make the width of the image 75% smaller, and center it.
 (To center an image, you can use the margin:auto trick from 
 above, but you will also need to set the display to block.)  */
+
+img {
+    border-radius: 50%;
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    
+}
 
 /* The "special" class should have a background color of gold.
 Just the paragraph marked "special" should have double the 
