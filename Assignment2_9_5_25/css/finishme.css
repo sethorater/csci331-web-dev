@@ -19,6 +19,11 @@ body {
 
 /* Make the h1 element centered and colored 'firebrick' red. */
 
+h1 {
+    text-align: center;
+    color: firebrick;
+}
+
 /* The image should have a 50% border radius to make it an elipse.
 Make the width of the image 75% smaller, and center it.
 (To center an image, you can use the margin:auto trick from 
