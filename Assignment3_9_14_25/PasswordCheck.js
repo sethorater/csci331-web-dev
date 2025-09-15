@@ -15,8 +15,17 @@ function isStrongPassword(password) {
             break;
         }
     }
+
+    if (!digit) {
+        console.log("needs digit");
+        return false;
+    }
+
+    console.log("its good password");
+    return true;
 }
 
 isStrongPassword("qwerty1");
 isStrongPassword("qwertypassword1");
-isStrongPassword("qwertyasdf12");
+isStrongPassword("qwertyABC");
+isStrongPassword("qwerty123");
