@@ -1,3 +1,6 @@
+// Name: Seth Keirn
+// Program: convert_temp.js
+
 window.addEventListener("DOMContentLoaded", domLoaded);
 
 function domLoaded() {
