@@ -4,7 +4,8 @@ import React from 'react'
 import { useProducts } from './hooks/callProducts'
 import CountButton from "./components/CountButton/CountButton"
 import SearchBar from "./components/SearchBar/SearchBar"
-import Button from "./components/Button/Button"
+import GitHub from './components/GitHub/GitHub'
+import './styles/globals.css'
 
 
 const App = () => {
@@ -14,10 +15,10 @@ const App = () => {
   const hasProducts = productsState.length > 0
 
   return (
-    <div>
-      <Button>hello world</Button>
-      <CountButton incrementBy={1}/>
-      <CountButton incrementBy={5}/>
+    <div className='main-container'>
+      <CountButton incrementBy={1} buttonColor={'black'}/>
+      <CountButton incrementBy={2} buttonColor={'black'}/>
+      <GitHub />
       {hasProducts ?  <SearchBar products={productsState} /> : "Loading..."}
      
     </div>
