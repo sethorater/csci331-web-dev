@@ -18,21 +18,44 @@ const SearchBar = (props) => {
     const shouldDisplayButton = searchValue.length > 0
 
     const filteredProducts = props.products.filter((product) => {
-        return product.includes(searchValue)
+        if (!product.title) return false;
+        return product.title.toLowerCase().includes(searchValue.toLowerCase()) 
     })
 
-    return <div>
+    return <div className='SearchBar-container'>
         <input type="text" value={searchValue} onChange={handleInputChange} />
+        {shouldDisplayButton && <button onClick={handleClearClick}>Clear</button>}
 
-        {shouldDisplayButton && <button onClick={handleClearClick}>clear</button>}
-
-        <ul>
-            {filteredProducts.map((product) => {
-                return <li key={product}>{product}</li>
-            })}
-        </ul>
-       
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {filteredProducts.map((product) => (
+                    <tr key={product.title}>
+                        <td>
+                            <img 
+                                src={product.image} 
+                                alt={product.title} 
+                                style={{ width: '100px', height: '100px' }} 
+                            />
+                        </td>
+                        <td>
+                            {product.title}
+                        </td>
+                        <td>
+                            ${product.price ? product.price.toFixed(2) : 'N/A'}
+                        </td>
+                    </tr>
+                ))}
+            </tbody>
+        </table>
     </div>
+       
 }
 
 export default SearchBar

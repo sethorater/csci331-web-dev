@@ -1,0 +1,26 @@
+.github-info-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.github-info-container p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.github-link {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0070f3;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 2px solid #0070f3;
+    border-radius: 4px;
+}
